@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Eficaz Online</title>
+</head>
+<body>
+  Redirecionando..
+ 
+  <script type="text/javascript">
+  var ua = navigator.userAgent.toLowerCase();
+  var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+  var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+  if(isAndroid) {
+    window.location = 'https://play.google.com/store/apps/details?id=br.com.deway.guiaeficaz&hl=pt_BR';
+  }
+
+  if(isIOS){
+    window.location = 'https://itunes.apple.com/br/app/eficaz-online/id1250208496?mt=8';
+  }
+
+  if(!isIOS && !isAndroid){
+    window.location = 'http://www.eficazcomunicacao.net';
+  }
+    
+  </script>
+</body>
+  
+</html>
